@@ -1,0 +1,23 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>bookingServlet</servlet-name>
+        <servlet-class>com.terranativa.servlet.bookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookingServlet</servlet-name>
+        <url-pattern>/submitBooking</url-pattern>
+    </servlet-mapping>
+
+    <!-- Optional Confirmation -->
+    <servlet>
+        <servlet-name>confirmationServlet</servlet-name>
+        <servlet-class>com.terranativa.servlet.confirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>confirmationServlet</servlet-name>
+        <url-pattern>/confirmation</url-pattern>
+    </servlet-mapping>
+
+</web-app>
